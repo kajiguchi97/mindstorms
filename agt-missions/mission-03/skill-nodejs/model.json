@@ -1,0 +1,77 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "mindstorms",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "SetCommandIntent",
+          "slots": [
+            {
+              "name": "Command",
+              "type": "CommandType"
+            }
+          ],
+          "samples": [
+            "activate {Command} mode",
+            "move in a {Command}",
+            "fire {Command}",
+            "activate {Command}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "CommandType",
+          "values": [
+            {
+              "name": {
+                "value": "right"
+              }
+            },
+            {
+              "name": {
+                "value": "left"
+              }
+            },
+            {
+              "name": {
+                "value": "straight"
+              }
+            },
+            {
+              "name": {
+                "value": "pitch"
+              }
+            },
+            {
+              "name": {
+                "value": "cannon"
+              }
+            },
+            {
+              "name": {
+                "value": "shot"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
